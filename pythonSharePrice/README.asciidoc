@@ -1,0 +1,14 @@
+Python rest API
+
+This project implements a Python rest API for stockmarket information.  
+----
+example:
+http://pythonstock.westeurope.cloudapp.azure.com:5000/
+http://pythonstock.westeurope.cloudapp.azure.com:5000/price_high/MSFT
+http://pythonstock.westeurope.cloudapp.azure.com:5000/help
+http://pythonstock.westeurope.cloudapp.azure.com:5000/getData/MSFT
+http://pythonstock.westeurope.cloudapp.azure.com:5000/getData/GOOG
+----
+
+
+

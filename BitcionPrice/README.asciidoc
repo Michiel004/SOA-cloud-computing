@@ -1,0 +1,14 @@
+C# soup server
+
+This project implements a soup server for bitcoin information.  
+----
+example:
+https://bitcionpricev220190827100215.azurewebsites.net/WebService1.asmx?wsdl/
+https://bitcionpricev220190827100215.azurewebsites.net/WebService1.asmx/test
+https://bitcionpricev220190827100215.azurewebsites.net/WebService1.asmx/help
+https://bitcionpricev220190827100215.azurewebsites.net/WebService1.asmx/BTCPrice
+https://bitcionpricev220190827100215.azurewebsites.net/WebService1.asmx/BTCinfo
+----
+
+
+
