@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  bitcionpricev2:
+    image: bitcionpricev2:dev
+    build:
+      args:
+        source: obj/Docker/empty/
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "BitcionPriceV2"
+    volumes:
+      - C:\Users\user\source\repos\BitcionPriceV2\BitcionPriceV2:C:\inetpub\wwwroot
+      - :C:\remote_debugger:ro
+    entrypoint: cmd /c "start /B C:\\ServiceMonitor.exe w3svc & C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646"
+

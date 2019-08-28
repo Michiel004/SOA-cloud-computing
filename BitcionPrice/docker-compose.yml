@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bitcionpricev2:
+    image: ${DOCKER_REGISTRY-}bitcionpricev2
+    build:
+      context: .\BitcionPriceV2
+      dockerfile: Dockerfile

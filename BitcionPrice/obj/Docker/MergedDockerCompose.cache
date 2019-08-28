@@ -1,0 +1,13 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  bitcionpricev2:
+    build:
+      context: C:\Users\user\source\repos\BitcionPriceV2\BitcionPriceV2
+      dockerfile: Dockerfile
+    image: bitcionpricev2
+    ports:
+    - target: 80
+version: '3.4'
