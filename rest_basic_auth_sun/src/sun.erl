@@ -57,12 +57,17 @@ loop(Ref) ->
 
 
 is_authorized(Req, State) ->
+   case cowboy_req:method(Req) of
+     <<"GET">> ->
 	case cowboy_req:parse_header(<<"authorization">>, Req) of
 		{basic, User = <<"Michiel">>, <<"Erlang">>} ->
 			{true, Req,User};
 		_ ->
 			{{false, <<"Basic realm=\"cowboy\"">>}, Req, State}
-	end.
+	end;
+<<"OPTIONS">> ->
+      {true, Req, State}
+  end.
 
 content_types_provided(Req, State) ->
 	{[

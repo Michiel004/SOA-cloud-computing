@@ -14,6 +14,7 @@ start(_Type, _Args) ->
 	Dispatch = cowboy_router:compile([
 		{'_', [
 			{"/sun", sun, []},
+			{"/help", help, []},
 			{"/", toppage_h, []}
 		]}
 	]),
@@ -24,5 +25,9 @@ start(_Type, _Args) ->
 	rest_basic_auth_sup:start_link().
 
 stop(_State) ->
+
 	ok.
+
+
+
 
