@@ -1,0 +1,13 @@
+SOA & cloud computing 
+
+This project implements a few rest and a soup server.  
+
+Main laravel project: 
+----
+
+http://laradock.westeurope.cloudapp.azure.com/
+http://laradock.westeurope.cloudapp.azure.com:8080/
+----
+
+
+
