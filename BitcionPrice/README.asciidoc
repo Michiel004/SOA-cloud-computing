@@ -1,6 +1,6 @@
-C# soup server
+C# soap server
 
-This project implements a soup server for bitcoin information.  
+This project implements a soap server for bitcoin information.  
 ----
 example:
 https://bitcionpricev220190827100215.azurewebsites.net/WebService1.asmx?wsdl/
